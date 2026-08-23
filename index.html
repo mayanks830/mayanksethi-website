@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mayank Sethi - Principal Database Engineer</title>
-  <meta name="description" content="Principal Database Engineer. 17 years building data infrastructure at PIMCO and Group1001. Author of the SCALER framework.">
-  <meta property="og:title" content="Mayank Sethi - Principal Database Engineer">
-  <meta property="og:description" content="Principal Database Engineer. 17 years building data infrastructure at PIMCO and Group1001. Author of the SCALER framework.">
+  <title>Mayank Sethi - Principal Data Operations Engineer</title>
+  <meta name="description" content="Principal Data Operations Engineer. 17 years building enterprise data governance and cloud database platforms at PIMCO and Group1001. Originator of the ADCP control plane, a tiered classification engine governing 1.5M+ columns, and the SCALER credential framework.">
+  <meta property="og:title" content="Mayank Sethi - Principal Data Operations Engineer">
+  <meta property="og:description" content="Principal Data Operations Engineer. 17 years building enterprise data governance and cloud database platforms at PIMCO and Group1001. Originator of the ADCP control plane, a tiered classification engine governing 1.5M+ columns, and the SCALER credential framework.">
   <meta property="og:url" content="https://mayanksethi.com">
 
   <!-- Google tag (gtag.js) -->
@@ -471,6 +471,8 @@ a { color: inherit; text-decoration: none; }
 .xp__list li em { font-style: italic; color: var(--ink-dim); }
 
 /* ---------- SCALER ---------- */
+.frameworks { display: flex; flex-direction: column; gap: 32px; }
+
 .scaler {
   background: var(--bg-elev);
   border: 1px solid var(--rule);
@@ -519,10 +521,11 @@ a { color: inherit; text-decoration: none; }
 }
 @media (max-width: 900px) { .scaler__right { border-left: 0; border-top: 1px solid var(--rule); padding: 40px 24px; min-height: 380px; } }
 
-.diagram { position: relative; width: 100%; max-width: 360px; aspect-ratio: 1; }
+.diagram { position: relative; width: 100%; max-width: 460px; aspect-ratio: 1; }
 .diagram svg { width: 100%; height: 100%; overflow: visible; }
 
-.diagram__node { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; fill: var(--ink); }
+.diagram__caption { font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; fill: var(--accent); text-anchor: middle; }
+.diagram__node { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; fill: var(--ink); }
 .diagram__node-bg { fill: var(--bg-elev); stroke: var(--rule); stroke-width: 1; }
 .diagram__node-bg.is-active { stroke: var(--accent); }
 .diagram__hub-label { font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; fill: var(--accent); text-anchor: middle; }
@@ -683,7 +686,7 @@ a { color: inherit; text-decoration: none; }
     <div class="nav__links">
       <a href="#about"><span class="num">01</span>About</a>
       <a href="#work"><span class="num">02</span>Work</a>
-      <a href="#scaler"><span class="num">03</span>SCALER</a>
+      <a href="#frameworks"><span class="num">03</span>Frameworks</a>
       <a href="#writing"><span class="num">04</span>Writing</a>
       <a href="#judging"><span class="num">05</span>Judging</a>
       <a href="#speaking"><span class="num">06</span>Speaking</a>
@@ -698,7 +701,7 @@ a { color: inherit; text-decoration: none; }
       <div class="hero__grid">
         <div class="hero__lead">
           <div class="hero__meta reveal">
-            <span>Principal Database Engineer</span>
+            <span>Principal Data Operations Engineer</span>
             <span class="sep"></span>
             <span>Austin, TX</span>
           </div>
@@ -764,7 +767,7 @@ a { color: inherit; text-decoration: none; }
           <span>Engineer's note</span>
         </div>
         <h2 class="section__title">
-          Building data systems where <em>downtime isn't an option.</em>
+          Making the safe path <em>the automatic one.</em>
         </h2>
       </div>
 
@@ -773,15 +776,21 @@ a { color: inherit; text-decoration: none; }
           <span>Located</span>
           <span style="color:var(--ink-dim)">Austin, Texas</span>
           <span style="margin-top:16px;">Discipline</span>
-          <span style="color:var(--ink-dim)">Database architecture &middot; Cloud security automation &middot; AI governance</span>
+          <span style="color:var(--ink-dim)">Enterprise data governance &middot; Cloud database platforms &middot; Regulated financial services</span>
         </div>
 
         <div class="about__body reveal" data-delay="1">
           <p>
-            Mayank Sethi is a Principal Database Engineer working at the intersection of <strong>enterprise data infrastructure</strong> and the financial institutions that depend on it. Over seventeen years, he has built and governed critical data platforms at two of the most demanding firms in fixed-income and asset management &mdash; <strong>PIMCO</strong>, one of the world's largest fixed-income managers, and <strong>Group1001</strong>, an $80 billion insurance and asset management enterprise.
+            Banks and insurers hold millions of pieces of personal information &mdash; social security numbers, policy details, account balances. Regulators require them to know exactly where all of it sits and who can reach it. Most institutions answer that question by hand, which makes the answer slow, expensive, and out of date the moment it is produced.
           </p>
           <p>
-            His work lives where database architecture meets cloud security automation and AI-driven governance. He has originated <span class="term">SCALER</span>, a novel framework for credential lifecycle automation; published peer-reviewed research with <strong>IEEE</strong> and the <em>American Journal of Technology</em>; and shipped production systems governing <strong>hundreds of thousands of sensitive data columns</strong> &mdash; work featured on the <strong>Dagster</strong> engineering blog.
+            Mayank Sethi builds the systems that answer it automatically. At <strong>PIMCO</strong>, one of the world's largest fixed-income managers, and now at <strong>Group1001</strong>, an insurance holding company with <strong>$86.1 billion</strong> under management, he has turned manual compliance work into governed platforms that produce their own evidence.
+          </p>
+          <p>
+            The discipline is the same across everything he has built: use the cheapest method that can decide correctly, escalate only the genuinely hard cases to expensive technology, keep a human able to override without creating a second source of truth, and design so the thing survives being moved to another company under a different regulator. <strong>Three of his four frameworks were built at one institution and rebuilt at a second.</strong>
+          </p>
+          <p>
+            He is an <strong>IEEE Senior Member</strong>, a grade held by roughly ten percent of the institute's half-million members. He has published three peer-reviewed papers and serves the field as a reviewer, program committee member and awards judge.
           </p>
           <p style="color:var(--ink-dim);font-size:17px;">
             He writes about what actually breaks at scale &mdash; and the patterns engineers use to keep it from breaking again.
@@ -796,14 +805,14 @@ a { color: inherit; text-decoration: none; }
           <div class="stats__sub">Fixed-income, insurance, asset management</div>
         </div>
         <div class="stats__cell">
-          <div class="stats__num"><span data-count="950000" data-fmt="comma">0</span></div>
+          <div class="stats__num"><span data-count="1500000" data-fmt="comma">0</span><span class="plus">+</span></div>
           <div class="stats__label">Columns under AI classification</div>
-          <div class="stats__sub">PII / SPI governance across 40+ source systems</div>
+          <div class="stats__sub">PII / SPI governance across 62 Snowflake databases</div>
         </div>
         <div class="stats__cell">
-          <div class="stats__num"><span data-count="3" data-fmt="int">0</span><span class="unit">PB</span></div>
-          <div class="stats__label">Data infrastructure managed</div>
-          <div class="stats__sub">Snowflake, Exadata, Oracle Fusion, Neo4j</div>
+          <div class="stats__num"><span data-count="4" data-fmt="int">0</span></div>
+          <div class="stats__label">Frameworks originated</div>
+          <div class="stats__sub">Three rebuilt at a second institution under different regulation</div>
         </div>
       </div>
 
@@ -828,38 +837,40 @@ a { color: inherit; text-decoration: none; }
 
         <div class="xp__row reveal">
           <div class="xp__meta">
-            <div class="xp__years">2024 &rarr; <span class="now">present</span></div>
+            <div class="xp__years">Feb 2025 &rarr; <span class="now">present</span></div>
             <div class="xp__org">Group1001</div>
-            <div class="xp__org-sub">$80B insurance &amp; asset management &mdash; Zionsville, IN</div>
+            <div class="xp__org-sub">$86.1B insurance holding company &mdash; Zionsville, IN</div>
           </div>
           <div class="xp__detail">
-            <h4>Principal Database Engineer</h4>
+            <h4>Principal Data Operations Engineer</h4>
             <div class="role-sub">Snowflake platform &middot; Credential lifecycle automation &middot; AI governance</div>
             <ul class="xp__list">
-              <li><span class="marker">&rarr;</span><span>Architected the firm's Snowflake platform from ground-up &mdash; <b>200+ users</b>, <b>90+ databases</b>, <b>1,100+ schemas.</b></span></li>
-              <li><span class="marker">&rarr;</span><span>Originated the <b>SCALER</b> framework for enterprise credential lifecycle management; deployed to <b>1,000+ service accounts</b>, <em>zero incidents to date.</em></span></li>
-              <li><span class="marker">&rarr;</span><span>Designed an AI-driven PII/SPI classification system governing <b>950,000 columns</b> across 40+ source systems.</span></li>
+              <li><span class="marker">&rarr;</span><span>Own the Snowflake platform underpinning an <b>$86.1B</b> insurance group &mdash; took it from manual click-ops to a governed production service, live <b>June 2025</b>.</span></li>
+              <li><span class="marker">&rarr;</span><span>Built the Terraform governance framework managing every Snowflake object as code &mdash; <b>~15,000 resources</b> across 15 business domains, approved as organizational standard by the Architecture Review Board.</span></li>
+              <li><span class="marker">&rarr;</span><span>Designed an AI-driven PII/SPI classification system governing <b>1.5 million+ columns</b> across 62 Snowflake databases.</span></li>
               <li><span class="marker">&rarr;</span><span>Improved CIS benchmark compliance from <b>48% &rarr; 92%</b> across the platform.</span></li>
-              <li><span class="marker">&rarr;</span><span>Led Oracle Fusion decommissioning: <b>450,000+</b> business attachments migrated without business interruption.</span></li>
+              <li><span class="marker">&rarr;</span><span>Recovered <b>450,000+</b> business attachments from Oracle Fusion backups after decommissioning left them unpreserved &mdash; ~1TB of encrypted exports, extracted via an 8-way parallel pipeline.</span></li>
             </ul>
           </div>
         </div>
 
         <div class="xp__row reveal">
           <div class="xp__meta">
-            <div class="xp__years">2019 &rarr; 2024</div>
+            <div class="xp__years">2014 &rarr; Feb 2025</div>
             <div class="xp__org">PIMCO</div>
-            <div class="xp__org-sub">One of the world's largest fixed-income investment managers</div>
+            <div class="xp__org-sub">One of the world's largest fixed-income investment managers &mdash; direct from Oct 2019, prior engagement via Gemini Solutions</div>
           </div>
           <div class="xp__detail">
             <h4>Senior Database Engineer</h4>
             <div class="role-sub">Snowflake SME &middot; Tech Lead &middot; 3 PB of historical data &middot; 170+ apps</div>
             <ul class="xp__list">
-              <li><span class="marker">&rarr;</span><span>Established firm-wide Snowflake SME function; managed <b>3 PB</b> of historical data across <b>170+ application teams</b> executing millions of daily queries.</span></li>
-              <li><span class="marker">&rarr;</span><span>Led Snowflake cost optimization campaign across 21 app teams &mdash; reduced XL+ warehouse spend from <b>$1,300/day &rarr; under $200/day</b>, delivering <b>$500K+</b> in annual savings.</span></li>
+              <li><span class="marker">&rarr;</span><span>Became the firm's designated Snowflake authority during its move off Oracle &mdash; the escalation point for a platform holding <b>3 PB</b> and serving 170+ application teams.</span></li>
+              <li><span class="marker">&rarr;</span><span>Led Snowflake cost optimization across 21 app teams &mdash; <b>$300K annually</b> from warehouse right-sizing.</span></li>
               <li><span class="marker">&rarr;</span><span>Engineered HVR environment refresh using zero-copy cloning, cutting refresh time from <b>36 hours &rarr; 45 minutes</b> &mdash; <em>$120K/year</em> in compute savings.</span></li>
-              <li><span class="marker">&rarr;</span><span>Built ServiceNow automation handling <b>75%</b> of cloud team tickets <em>(1,500+ requests/year)</em>, saving <b>500+ person-hours annually.</b></span></li>
-              <li><span class="marker">&rarr;</span><span>Supported Sybase IQ decommissioning through <b>20+ training sessions</b> and purpose-built utilities &mdash; enabling <em>$1.5M</em> in infrastructure and licensing savings.</span></li>
+              <li><span class="marker">&rarr;</span><span>Built ServiceNow automation that completed <b>4,500+ requests</b> &mdash; roughly <b>80%</b> of all cloud database user requests &mdash; with no engineer involvement.</span></li>
+              <li><span class="marker">&rarr;</span><span>Led the firm's response to the <b>2024 Snowflake security incident</b> &mdash; originated the <b>SCALER</b> framework and rotated credentials across <b>1,000+ service accounts</b> spanning 150+ application teams, <em>with no production outage.</em></span></li>
+              <li><span class="marker">&rarr;</span><span>Led Exadata consolidation, decommissioning <b>200+ physical machines</b> and migrating workloads onto a consolidated platform &mdash; approximately <b>$2M</b> in infrastructure savings.</span></li>
+              <li><span class="marker">&rarr;</span><span>Reclaimed <b>190TB+</b> of Oracle storage in a single year through compression and reorganisation &mdash; including the firm's historical store, taken from <b>208TB to 96TB</b>.</span></li>
             </ul>
           </div>
         </div>
@@ -869,40 +880,169 @@ a { color: inherit; text-decoration: none; }
   </section>
 
   <!-- SCALER -->
-  <section id="scaler" class="section">
+  <section id="frameworks" class="section">
     <div class="container">
 
       <div class="section__head reveal">
         <div class="section__sup">
-          <span class="index">03 / Original framework</span>
-          <span>Peer-reviewed</span>
+          <span class="index">03 / Frameworks</span>
+          <span>Built, deployed, published</span>
         </div>
         <h2 class="section__title">
-          A finite-state machine <em>for credential lifecycle.</em>
+          Systems that <em>outlived their first employer.</em>
         </h2>
       </div>
 
-      <div class="scaler reveal" data-delay="1">
-        <div class="scaler__left">
-          <h3 class="scaler__title">The <span class="acronym">SCALER</span><br>Framework.</h3>
-          <div class="scaler__tag">
-            Service Credential Automation Lifecycle for Enterprise Resilience.
+      <div class="frameworks reveal" data-delay="1">
+
+        <div class="scaler">
+          <div class="scaler__left">
+            <h3 class="scaler__title">Tiered <span class="acronym">Classification</span><br>&amp; Masking.</h3>
+            <div class="scaler__tag">
+              1.5 million+ columns across 62 Snowflake databases. Built solo, in nine days.
+            </div>
+            <div class="scaler__body">
+              <p>
+                The industry's reflex answer to finding sensitive data is to point a large language model at every column. At this volume that is the expensive way to get a slow answer, which is why most organisations classify once and let the result go stale.
+              </p>
+              <p>
+                This engine resolves each column with the cheapest method capable of deciding correctly. Pattern matching handles the bulk, native classification catches what patterns miss, and generative AI is reserved for the genuinely ambiguous remainder. <em>The hard problem was never detection. It was deciding what deserves the expensive tier.</em>
+              </p>
+              <p>
+                Classification and enforcement are a single step: results write to tags that masking policies are already bound to, so a column is protected the moment it is identified. Data owners correct misclassifications through a self-service app, and those corrections travel the same orchestrated path as the automated run, so human and machine answers cannot diverge.
+              </p>
+            </div>
+            <div class="scaler__cite">Featured &mdash; Dagster engineering blog &middot; Published &mdash; IEEE ICOSAAS 2026</div>
+            <div class="scaler__cta">
+              <a href="https://dagster.io/blog/classifying-a-million-snowflake-columns-in-9-days-solo-with-dagster" target="_blank" rel="noopener" class="btn">
+                Read on Dagster
+                <svg class="btn__arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9 9 3M4 3h5v5"></path></svg>
+              </a>
+            </div>
           </div>
+          <div class="scaler__right">
+            <div class="diagram">
+              <svg viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg">
+                <g stroke="#d4ff3a" stroke-width="1" fill="none" opacity="0.4" stroke-dasharray="3 4">
+                  <path d="M 180 56 L 180 76"></path>
+                  <path d="M 180 114 L 180 134"></path>
+                </g>
+                <g>
+                  <rect class="diagram__node-bg" x="24" y="18" width="312" height="38"></rect>
+                  <text class="diagram__node" x="180" y="42" text-anchor="middle">Pattern matching</text>
+                </g>
+                <g>
+                  <rect class="diagram__node-bg" x="72" y="76" width="216" height="38"></rect>
+                  <text class="diagram__node" x="180" y="100" text-anchor="middle">Native classify</text>
+                </g>
+                <g>
+                  <rect class="diagram__node-bg is-active" x="118" y="134" width="124" height="38"></rect>
+                  <text class="diagram__node" x="180" y="158" text-anchor="middle">Cortex AI</text>
+                </g>
+                <g stroke="#d4ff3a" stroke-width="1.25" fill="none" opacity="0.9">
+                  <path d="M 180 172 L 180 206"></path>
+                  <path d="M 112 234 L 122 234"></path>
+                  <path d="M 232 234 L 242 234"></path>
+                </g>
+                <g fill="#d4ff3a">
+                  <polygon points="175,206 185,206 180,214"></polygon>
+                  <polygon points="122,229 130,234 122,239"></polygon>
+                  <polygon points="242,229 250,234 242,239"></polygon>
+                </g>
+                <g>
+                  <rect class="diagram__node-bg" x="8" y="214" width="104" height="40"></rect>
+                  <text class="diagram__node" x="60" y="239" text-anchor="middle">Override</text>
+                </g>
+                <g>
+                  <rect class="diagram__node-bg is-active" x="128" y="214" width="104" height="40"></rect>
+                  <text class="diagram__node" x="180" y="239" text-anchor="middle">Tag</text>
+                </g>
+                <g>
+                  <rect class="diagram__node-bg" x="248" y="214" width="104" height="40"></rect>
+                  <text class="diagram__node" x="300" y="239" text-anchor="middle">Mask</text>
+                </g>
+                <text class="diagram__caption" x="180" y="304">TWO INPUTS &middot; ONE PATH</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="scaler">
+          <div class="scaler__left">
+            <h3 class="scaler__title">The <span class="acronym">ADCP</span><br>Control Plane.</h3>
+            <div class="scaler__tag">
+              Autonomous Database Change Platform, built on the Request&ndash;Policy&ndash;Execution&ndash;Audit model.
+            </div>
+            <div class="scaler__body">
+              <p>
+                In a regulated firm, a request as small as read access to a table waits two to three business days. The delay is not difficulty. It is that nobody can prove the action was authorized unless a person signs off on it.
+              </p>
+              <p>
+                ADCP separates every request into four independent concerns, so authorization is evaluated mechanically and evidence produced automatically. The data owner still approves. The database engineer is no longer the bottleneck, and the automated path becomes <em>more auditable than the manual one.</em>
+              </p>
+              <p>
+                Built at PIMCO, then independently rebuilt at Group1001 under insurance regulation &mdash; only the policy and audit layers required reconfiguration. Over twelve months: <strong>80% of ~6,200 requests resolved autonomously</strong>, latency cut from days to under five minutes, and <strong>zero incorrect authorizations across ~4,960 automated actions.</strong>
+              </p>
+            </div>
+            <div class="scaler__cite">Published &mdash; American Journal of Technology, 2026 &middot; Sole author</div>
+            <div class="scaler__cta">
+              <a href="https://doi.org/10.58425/ajt.v5i3.512" target="_blank" rel="noopener" class="btn">
+                Read the paper
+                <svg class="btn__arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9 9 3M4 3h5v5"></path></svg>
+              </a>
+            </div>
+          </div>
+          <div class="scaler__right">
+            <div class="diagram">
+              <svg viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg">
+                <g stroke="#d4ff3a" stroke-width="1" fill="none" opacity="0.4" stroke-dasharray="3 4">
+                  <path d="M 180 74 L 180 96"></path>
+                  <path d="M 180 150 L 180 172"></path>
+                  <path d="M 180 226 L 180 248"></path>
+                </g>
+                <g>
+                  <rect class="diagram__node-bg" x="40" y="20" width="280" height="54"></rect>
+                  <text class="diagram__node" x="180" y="52" text-anchor="middle">Request</text>
+                </g>
+                <g>
+                  <rect class="diagram__node-bg is-active" x="40" y="96" width="280" height="54"></rect>
+                  <text class="diagram__node" x="180" y="128" text-anchor="middle">Policy</text>
+                </g>
+                <g>
+                  <rect class="diagram__node-bg" x="40" y="172" width="280" height="54"></rect>
+                  <text class="diagram__node" x="180" y="204" text-anchor="middle">Execution</text>
+                </g>
+                <g>
+                  <rect class="diagram__node-bg is-active" x="40" y="248" width="280" height="54"></rect>
+                  <text class="diagram__node" x="180" y="280" text-anchor="middle">Audit</text>
+                </g>
+                <text class="diagram__caption" x="180" y="330">ONLY THESE TWO CHANGED</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="scaler">
+          <div class="scaler__left">
+            <h3 class="scaler__title">The <span class="acronym">SCALER</span><br>Framework.</h3>
+            <div class="scaler__tag">
+              Scale &middot; Classify &middot; Assign &middot; Lifecycle &middot; Enforce &middot; Rotate.
+            </div>
           <div class="scaler__body">
             <p>
               Most enterprises manage database credentials reactively &mdash; rotated after incidents, tracked in spreadsheets, governed by manual checklists.
             </p>
             <p>
-              <strong>SCALER</strong> is a formal state-machine model that treats credential lifecycle as a first-class engineering problem. Provision &rarr; activate &rarr; rotate &rarr; audit &rarr; retire &mdash; each transition observable, automated, and idempotent.
+              <strong>SCALER</strong> treats credential lifecycle as a first-class engineering problem, and the ordering is the contribution. <strong>S</strong>cale &rarr; <strong>C</strong>lassify &rarr; <strong>A</strong>ssign &rarr; <strong>L</strong>ifecycle &rarr; <strong>E</strong>nforce &rarr; <strong>R</strong>otate. Ownership is established <em>before</em> anything is touched, which is what separates remediation from an outage.
             </p>
             <p>
-              Designed and deployed at Group1001, SCALER now governs <strong>1,000+ service accounts</strong> across 150+ application teams. Integrated with ServiceNow for automated lifecycle workflows. <em>Zero production incidents to date.</em>
+              Applied across <strong>1,000+ Snowflake service accounts</strong> spanning 150+ application teams, with automation handling 1,300+ related requests and <strong>no production outage</strong>. Derived entirely from production experience rather than vendor guidance.
             </p>
           </div>
-          <div class="scaler__cite">Published &mdash; American Journal of Technology (GPR Journals), 2026</div>
+          <div class="scaler__cite">Presenting &mdash; CornCon 12 Cybersecurity Conference, 2 October 2026</div>
           <div class="scaler__cta">
-            <a href="https://gprjournals.org/journals/index.php/ajt/article/view/512" target="_blank" rel="noopener" class="btn">
-              Read the paper
+            <a href="https://whova.com/embedded/speaker_detail/moHHtsILJDkAoZkDQbVKyZqiSRnMXDKopQ8Tl8K54FI%3D/53513095/" target="_blank" rel="noopener" class="btn">
+              View the session
               <svg class="btn__arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9 9 3M4 3h5v5"></path></svg>
             </a>
           </div>
@@ -912,46 +1052,46 @@ a { color: inherit; text-decoration: none; }
           <div class="diagram">
             <svg viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg">
               <g stroke="#d4ff3a" stroke-width="1" fill="none" opacity="0.55" stroke-dasharray="3 4">
-                <path d="M 180 60 A 120 120 0 0 1 294 142"></path>
-                <path d="M 294 142 A 120 120 0 0 1 252 274"></path>
-                <path d="M 252 274 A 120 120 0 0 1 108 274"></path>
-                <path d="M 108 274 A 120 120 0 0 1 66 142"></path>
-                <path d="M 66 142 A 120 120 0 0 1 180 60"></path>
-              </g>
-              <g fill="#d4ff3a">
-                <polygon points="288,138 298,142 294,150" transform="rotate(15 296 144)"></polygon>
-                <polygon points="252,270 256,278 248,278" transform="rotate(40 252 274)"></polygon>
-                <polygon points="112,278 104,274 112,270" transform="rotate(-20 108 274)"></polygon>
-                <polygon points="62,138 70,138 66,148" transform="rotate(-40 66 142)"></polygon>
-                <polygon points="174,58 184,58 180,68"></polygon>
+                <path d="M 180 60 A 120 120 0 0 1 284 120"></path>
+                <path d="M 284 120 A 120 120 0 0 1 284 240"></path>
+                <path d="M 284 240 A 120 120 0 0 1 180 300"></path>
+                <path d="M 180 300 A 120 120 0 0 1 76 240"></path>
+                <path d="M 76 240 A 120 120 0 0 1 76 120"></path>
+                <path d="M 76 120 A 120 120 0 0 1 180 60"></path>
               </g>
               <circle cx="180" cy="180" r="46" fill="#0b0b0d" stroke="#262626" stroke-width="1"></circle>
               <circle cx="180" cy="180" r="46" fill="none" stroke="#d4ff3a" stroke-width="1" stroke-dasharray="2 3" opacity="0.5"></circle>
-              <text class="diagram__hub-num" x="180" y="178">05</text>
-              <text class="diagram__hub-label" x="180" y="198">STATES</text>
+              <text class="diagram__hub-num" x="180" y="178">06</text>
+              <text class="diagram__hub-label" x="180" y="198">STAGES</text>
               <g>
-                <rect class="diagram__node-bg" x="138" y="40" width="84" height="32" rx="0"></rect>
-                <text class="diagram__node" x="180" y="60" text-anchor="middle">Provision</text>
+                <rect class="diagram__node-bg" x="136" y="44" width="88" height="32" rx="0"></rect>
+                <text class="diagram__node" x="180" y="64" text-anchor="middle">Scale</text>
               </g>
               <g>
-                <rect class="diagram__node-bg is-active" x="252" y="118" width="84" height="32" rx="0"></rect>
-                <text class="diagram__node" x="294" y="138" text-anchor="middle">Activate</text>
+                <rect class="diagram__node-bg" x="240" y="104" width="88" height="32" rx="0"></rect>
+                <text class="diagram__node" x="284" y="124" text-anchor="middle">Classify</text>
               </g>
               <g>
-                <rect class="diagram__node-bg" x="210" y="252" width="84" height="32" rx="0"></rect>
-                <text class="diagram__node" x="252" y="272" text-anchor="middle">Rotate</text>
+                <rect class="diagram__node-bg is-active" x="240" y="224" width="88" height="32" rx="0"></rect>
+                <text class="diagram__node" x="284" y="244" text-anchor="middle">Assign</text>
               </g>
               <g>
-                <rect class="diagram__node-bg" x="66" y="252" width="84" height="32" rx="0"></rect>
-                <text class="diagram__node" x="108" y="272" text-anchor="middle">Audit</text>
+                <rect class="diagram__node-bg" x="136" y="284" width="88" height="32" rx="0"></rect>
+                <text class="diagram__node" x="180" y="304" text-anchor="middle">Lifecycle</text>
               </g>
               <g>
-                <rect class="diagram__node-bg" x="24" y="118" width="84" height="32" rx="0"></rect>
-                <text class="diagram__node" x="66" y="138" text-anchor="middle">Retire</text>
+                <rect class="diagram__node-bg" x="32" y="224" width="88" height="32" rx="0"></rect>
+                <text class="diagram__node" x="76" y="244" text-anchor="middle">Enforce</text>
+              </g>
+              <g>
+                <rect class="diagram__node-bg" x="32" y="104" width="88" height="32" rx="0"></rect>
+                <text class="diagram__node" x="76" y="124" text-anchor="middle">Rotate</text>
               </g>
             </svg>
           </div>
         </div>
+      </div>
+
       </div>
     </div>
   </section>
@@ -977,14 +1117,14 @@ a { color: inherit; text-decoration: none; }
             <span class="project__num">/ 01</span>
             <span class="project__type">Production</span>
           </div>
-          <h3 class="project__name">AI-Driven Data Classification &amp; Dynamic Masking</h3>
+          <h3 class="project__name">Terraform Infrastructure Governance for Snowflake</h3>
           <p class="project__desc">
-            Production classification pipeline spanning 950,000 columns across 40+ source systems. Cortex ML + rules engine tags columns automatically; dynamic masking enforces policies at query time. Ships with a React/FastAPI governance app for human overrides and audit trails.
+            Terraform pipelines governing every Snowflake object type as version-controlled code &mdash; databases, schemas, warehouses, roles, grants, network policies, storage integrations, masking policies, tags and tasks. Extending infrastructure-as-code past infrastructure and into the governance and data-protection layer is what makes the whole compliance posture reviewable as a diff. Built and adopted as organizational standard at PIMCO, then independently rebuilt at Group1001 and approved as standard by its Architecture Review Board.
           </p>
           <div class="project__metrics">
-            <div class="project__metric"><span class="k">Stack</span><span class="v mono">Cortex &middot; Dagster &middot; React &middot; FastAPI</span></div>
-            <div class="project__metric"><span class="k">Scale</span><span class="v mono accent">950K columns</span></div>
-            <div class="project__metric"><span class="k">Status</span><span class="v mono">In production</span></div>
+            <div class="project__metric"><span class="k">Scale</span><span class="v mono accent">~15,000 resources &middot; 15 domains</span></div>
+            <div class="project__metric"><span class="k">Adopted</span><span class="v mono">Org standard at two firms</span></div>
+            <div class="project__metric"><span class="k">Compliance</span><span class="v mono">CIS 48% &rarr; 92%</span></div>
           </div>
         </article>
 
@@ -993,30 +1133,30 @@ a { color: inherit; text-decoration: none; }
             <span class="project__num">/ 02</span>
             <span class="project__type">Migration</span>
           </div>
-          <h3 class="project__name">Exadata Consolidation</h3>
+          <h3 class="project__name">Oracle Estate Consolidation &amp; Storage Reclamation</h3>
           <p class="project__desc">
-            Led enterprise-wide Oracle Exadata consolidation at PIMCO &mdash; decommissioning 200+ physical database servers and migrating workloads to a consolidated Exadata architecture. Zero downtime across critical risk and portfolio systems.
+            Reclaimed storage across PIMCO's Oracle estate through compression, reorganisation and decommissioning &mdash; including the firm's historical data store, taken from 208TB to 96TB. Contributed to the enterprise Data Containment programme and built the disaster recovery environment supporting PIMCO's participation in the Federal Reserve's TALF lending facility, delivered ahead of schedule.
           </p>
           <div class="project__metrics">
-            <div class="project__metric"><span class="k">Stack</span><span class="v mono">Oracle Exadata &middot; ASM</span></div>
-            <div class="project__metric"><span class="k">Savings</span><span class="v mono accent">$2M+ annually</span></div>
-            <div class="project__metric"><span class="k">Downtime</span><span class="v mono">0 minutes</span></div>
+            <div class="project__metric"><span class="k">Stack</span><span class="v mono">Oracle Exadata &middot; ASM &middot; ZFS</span></div>
+            <div class="project__metric"><span class="k">Reclaimed</span><span class="v mono accent">190TB+ in one year</span></div>
+            <div class="project__metric"><span class="k">Largest single DB</span><span class="v mono">208TB &rarr; 96TB</span></div>
           </div>
         </article>
 
         <article class="project">
           <div class="project__head">
             <span class="project__num">/ 03</span>
-            <span class="project__type">Open source</span>
+            <span class="project__type">Migration</span>
           </div>
-          <h3 class="project__name">Stock Signal AI</h3>
+          <h3 class="project__name">Oracle Fusion Document Recovery</h3>
           <p class="project__desc">
-            Open-source multi-source financial signal pipeline. Aggregates technical indicators, news sentiment, social media, congressional disclosures, and earnings data. Novel latency budget framework and two-tier deduplication.
+            When Oracle Fusion was decommissioned, its attachments were not preserved &mdash; leaving 450,000+ business documents recoverable only from backups. Invoices, purchase orders, expense receipts, journal vouchers and supplier contracts, stored as BLOBs inside the WebCenter Content layer. Restored roughly a terabyte of encrypted Data Pump exports to AWS RDS, built an eight-way parallel extraction pipeline running at about five times the throughput of a single-cursor extraction, and landed everything into categorized S3 with a Snowflake metadata layer for search.
           </p>
           <div class="project__metrics">
-            <div class="project__metric"><span class="k">Stack</span><span class="v mono">Python &middot; SQL &middot; LLM</span></div>
-            <div class="project__metric"><span class="k">License</span><span class="v mono">MIT</span></div>
-            <div class="project__metric"><span class="k">Repo</span><span class="v mono accent"><a href="https://github.com/mayanks830/stock-signal-ai" target="_blank" rel="noopener">Open on GitHub &rarr;</a></span></div>
+            <div class="project__metric"><span class="k">Recovered</span><span class="v mono accent">450,000+ documents</span></div>
+            <div class="project__metric"><span class="k">Source</span><span class="v mono">~1TB encrypted backups</span></div>
+            <div class="project__metric"><span class="k">Throughput</span><span class="v mono">~5x vs single-cursor</span></div>
           </div>
         </article>
 
@@ -1057,7 +1197,7 @@ a { color: inherit; text-decoration: none; }
         <div class="writing__row" style="cursor:default">
           <span class="writing__num">/03</span>
           <div class="writing__title">Classifying 1.5 Million Columns: An Automated Multi-Engine Approach to Enterprise PII Governance</div>
-          <div class="writing__pub">IEEE ICCSIE &middot; Accepted &middot; 2026</div>
+          <div class="writing__pub">IEEE ICOSAAS 2026 &middot; Published &middot; DOI 10.1109/ICOSAAS68663.2026.11648896</div>
           <span class="writing__arrow"></span>
         </div>
 
@@ -1137,6 +1277,13 @@ a { color: inherit; text-decoration: none; }
           <span class="writing__arrow">&nearr;</span>
         </a>
 
+        <div class="writing__row" style="cursor:default">
+          <span class="writing__num">/04</span>
+          <div class="writing__title">International Conference on High Performance Computing and Artificial Intelligence (HPCAI 2026) &mdash; Session Chair</div>
+          <div class="writing__pub">Eastern Michigan Joint College of Engineering &middot; September 2026</div>
+          <span class="writing__arrow"></span>
+        </div>
+
       </div>
     </div>
   </section>
@@ -1160,7 +1307,60 @@ a { color: inherit; text-decoration: none; }
         <a class="writing__row" href="https://theioes.org/conference/ijcaci2026/speaker/talk/154" target="_blank" rel="noopener">
           <span class="writing__num">/01</span>
           <div class="writing__title">Beyond "Throw an LLM at It": Tiered Computational Intelligence for Classifying 1.5 Million Columns of Enterprise Data</div>
-          <div class="writing__pub">IJCACI 2026 &middot; Keynote Speaker</div>
+          <div class="writing__pub">IJCACI 2026 &middot; Keynote Speaker &middot; 24 July 2026</div>
+          <span class="writing__arrow">&nearr;</span>
+        </a>
+
+        <a class="writing__row" href="https://www.youtube.com/watch?v=NHS2MCsUMQM" target="_blank" rel="noopener">
+          <span class="writing__num">/02</span>
+          <div class="writing__title">Watch the keynote &mdash; full recording</div>
+          <div class="writing__pub">IJCACI 2026 &middot; Video</div>
+          <span class="writing__arrow">&nearr;</span>
+        </a>
+
+        <div class="writing__row" style="cursor:default">
+          <span class="writing__num">/03</span>
+          <div class="writing__title">Tiered classification architecture &mdash; invited presentation to Snowflake's Solutions Engineering team</div>
+          <div class="writing__pub">Snowflake &middot; Central America SE team &middot; 31 July 2026</div>
+          <span class="writing__arrow"></span>
+        </div>
+
+        <a class="writing__row" href="https://usergroups.snowflake.com/events/details/snowflake-austin-presents-data-governance-at-scale/" target="_blank" rel="noopener">
+          <span class="writing__num">/04</span>
+          <div class="writing__title">Data Governance at Scale</div>
+          <div class="writing__pub">Snowflake Austin User Group &middot; 9 September 2026 &middot; Upcoming</div>
+          <span class="writing__arrow">&nearr;</span>
+        </a>
+
+        <a class="writing__row" href="https://whova.com/embedded/speaker_detail/moHHtsILJDkAoZkDQbVKyZqiSRnMXDKopQ8Tl8K54FI%3D/53513095/" target="_blank" rel="noopener">
+          <span class="writing__num">/05</span>
+          <div class="writing__title">From Click Ops to Closed Loop: Rotating 1,000+ Database Credentials Without an Outage</div>
+          <div class="writing__pub">CornCon 12 Cybersecurity Conference &middot; 2 October 2026 &middot; Upcoming</div>
+          <span class="writing__arrow">&nearr;</span>
+        </a>
+
+      </div>
+
+      <div class="section__head reveal" style="margin-top:5rem">
+        <div class="section__sup">
+          <span class="index">Press</span>
+          <span>Coverage naming Mayank</span>
+        </div>
+      </div>
+
+      <div class="writing reveal" data-delay="1">
+
+        <a class="writing__row" href="https://zeenews.india.com/industry-updates/the-ijcaci-2026-conference-witnessed-participation-of-researchers-from-10-countries-3063313.html" target="_blank" rel="noopener">
+          <span class="writing__num">/01</span>
+          <div class="writing__title">The IJCACI 2026 conference witnessed participation of researchers from 10 countries</div>
+          <div class="writing__pub">Zee News &middot; 27 July 2026</div>
+          <span class="writing__arrow">&nearr;</span>
+        </a>
+
+        <a class="writing__row" href="https://insights.scrs.in/news/129" target="_blank" rel="noopener">
+          <span class="writing__num">/02</span>
+          <div class="writing__title">IJCACI 2026 keynote coverage</div>
+          <div class="writing__pub">SCRS Insights &middot; 2026</div>
           <span class="writing__arrow">&nearr;</span>
         </a>
 
